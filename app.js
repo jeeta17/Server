@@ -8,5 +8,5 @@ app.use(cors())
 app.listen(5000, () => console.log('connected to Ranjeet'))
 
 app.get('/', (req, res) => {
-        res.send({'name':'ranjeet'})
+    res.sendFile('./countries.json')
 })
